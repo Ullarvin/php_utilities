@@ -1,0 +1,13 @@
+{
+    "name": "ullarvin/php_utilities",
+    "type": "library",
+    "description": "Useful PHP classes for general use.",
+    "keywords": ["php", "utilities"],
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Ullarvin",
+        "role": "Developer"
+      }
+    ]
+  }
