@@ -1,7 +1,7 @@
 <?php
 
 namespace php_utilities\Utilities;
-use \DateTime;
+use DateTime;
 
 /**
  * Simple DateTime Wrapper class
@@ -30,7 +30,7 @@ class DateUtility
         else
         {
             $this->dateTime = new DateTime();
-            $this->date = $this->dateTime->format($this->date_format);
+            $this->date = $this->dateTime->format("Y-m-d H:i:s");
         }
     }
 
@@ -69,6 +69,28 @@ class DateUtility
     public function format(string $date_format = "Y-m-d"): string
     {
         return $this->dateTime->format($date_format);
+    }
+
+    /**
+     * return difference of current datetime and date provided
+     * 
+     * @param ?string $format
+     * @param string $diff_format
+     * 
+     * @return string
+     */
+    public function diff(?string $date = NULL, string $format = "Y-m-d", string $diff_format = "%a" ): string
+    {
+        if(isset($date))
+        {
+            $dateTime = DateTime::createFromFormat($format, $date);
+        }
+        else
+        {
+            $dateTime = new DateTime();
+        }
+        $interval = $this->dateTime->diff($dateTime);
+        return $interval->format($diff_format);
     }
 
     
