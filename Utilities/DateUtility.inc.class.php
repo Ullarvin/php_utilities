@@ -74,6 +74,7 @@ class DateUtility
     /**
      * return difference of current datetime and date provided
      * 
+     * @param ?string|DateTime $date
      * @param ?string $format
      * @param string $diff_format
      * 
@@ -83,12 +84,20 @@ class DateUtility
     {
         if(isset($date))
         {
-            $dateTime = DateTime::createFromFormat($format, $date);
+            if(is_string($date))
+            {
+                $dateTime = DateTime::createFromFormat($format, $date);    
+            }
+            else
+            {
+                $dateTime = $date;
+            }
         }
         else
         {
             $dateTime = new DateTime();
         }
+        
         $interval = $this->dateTime->diff($dateTime);
         return $interval->format($diff_format);
     }
