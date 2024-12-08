@@ -67,11 +67,51 @@ class DateUtility
     }
 
     /**
+     * @return string $year property
+     */
+    public function get_year(): string
+    {
+        return $this->year;
+    }
+
+    /**
+     * @return string $month property
+     */
+    public function get_month(): string
+    {
+        return $this->month;
+    }
+
+    /**
+     * @return string $day property
+     */
+    public function get_day(): string
+    {
+        return $this->day;
+    }
+
+    /**
      * @return DateTime $dateTime property
      */
     public function get_dateTime(): DateTime
     {
         return $this->dateTime;
+    }
+
+    /**
+     * @return array $holiday_names property
+     */
+    public function get_holiday_names(): array
+    {
+        return $this->holiday_names;
+    }
+
+    /**
+     * @return string $date_format property
+     */
+    public function get_date_format(): string
+    {
+        return $this->date_format;
     }
 
     /****************
