@@ -38,7 +38,7 @@ class NameUtility
     /**
      * @return string $prefix property
      */
-    public function get_prefix()
+    public function get_prefix():string
     {
         return $this->prefix;
     }
@@ -46,7 +46,7 @@ class NameUtility
     /**
      * @return string $first property
      */
-    public function get_first()
+    public function get_first():string
     {
         return $this->first;
     }
@@ -54,7 +54,7 @@ class NameUtility
     /**
      * @return string $middle property
      */
-    public function get_middle()
+    public function get_middle():string
     {
         return $this->middle;
     }
@@ -62,7 +62,7 @@ class NameUtility
     /**
      * @return string $last property
      */
-    public function get_last()
+    public function get_last():string
     {
         return $this->last;
     }
@@ -70,15 +70,15 @@ class NameUtility
     /**
      * @return string $suffix property
      */
-    public function get_suffix()
+    public function get_suffix():string
     {
         return $this->suffix;
     }
 
     /**
-     * @return string $name_codes property
+     * @return array $name_codes property
      */
-    public function get_name_codes()
+    public function get_name_codes():array
     {
         return $this->name_codes;
     }

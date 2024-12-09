@@ -24,3 +24,12 @@ echo $nameUtl->format($format2);
 echo "<br>";
 echo $nameUtl->format($format3);
 echo "<br>";
+
+echo $nameUtl->get_prefix() . "<br>";
+echo $nameUtl->get_first() . "<br>";
+echo $nameUtl->get_middle() . "<br>";
+echo $nameUtl->get_last() . "<br>";
+echo $nameUtl->get_suffix() . "<br>";
+echo "<pre>";
+var_dump($nameUtl->get_name_codes());
+echo "</pre>";
