@@ -273,6 +273,44 @@ class DateUtility
         return $return_holiday;
     }
 
+    /**
+     * Check if day is a weekend
+     * 
+     * @return bool
+     */
+    public function is_weekend(): bool
+    {
+        $weekend = FALSE;
+
+        $numerical_day = $this->dateTime->format("N");
+
+        if((int)$numerical_day >= 6)
+        {
+            $weekend = TRUE;
+        }
+
+        return $weekend;
+    }
+
+    /**
+     * Check if day is a weekday
+     * 
+     * @return bool
+     */
+    public function is_weekday(): bool
+    {
+        $weekday = FALSE;
+
+        $numerical_day = $this->dateTime->format("N");
+
+        if((int)$numerical_day < 6)
+        {
+            $weekday = TRUE;
+        }
+
+        return $weekday;
+    }
+
     
 
 

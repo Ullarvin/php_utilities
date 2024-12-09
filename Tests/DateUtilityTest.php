@@ -11,4 +11,9 @@ echo "<br>";
 var_dump($dateUtl->is_holiday());
 echo "<br>";
 var_dump($dateUtl->get_holiday_name(TRUE));
+echo "<br>";
+var_dump($dateUtl->is_weekend());
+echo "<br>";
+var_dump($dateUtl->is_weekday());
+echo "<br>";
 
