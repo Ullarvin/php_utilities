@@ -10,6 +10,6 @@ DateUtilities
   - check if day is a holiday and getting holiday by year
 
 NameUtilities
-  -Simple Name formatter
-  -Return parts of provided name
-  -Formatting function to specify name order using string format
+  - Simple Name formatter
+  - Return parts of provided name
+  - Formatting function to specify name order using string format
