@@ -1,5 +1,5 @@
 <?php
-require("../Utilities/DateUtility.inc.class.php");
+require("../Utilities/DateUtility.php");
 
 use php_utilities\Utilities\DateUtility;
 

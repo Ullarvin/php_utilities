@@ -1,6 +1,6 @@
 <?php
 
-require("../Utilities/NameUtility.inc.class.php");
+require("../Utilities/NameUtility.php");
 
 use php_utilities\Utilities\NameUtility;
 
